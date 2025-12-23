@@ -42,9 +42,14 @@ st.markdown("""
 # =========================
 # LOAD FILES
 # =========================
-model = pickle.load(open("xgb_model.pkl", "rb"))
-scaler = pickle.load(open("scaler.pkl", "rb"))
-columns = pickle.load(open("model_columns.pkl", "rb"))
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model = pickle.load(open(os.path.join(BASE_DIR, "xgb_model.pkl"), "rb"))
+scaler = pickle.load(open(os.path.join(BASE_DIR, "scaler.pkl"), "rb"))
+columns = pickle.load(open(os.path.join(BASE_DIR, "model_columns.pkl"), "rb"))
+
 
 # =========================
 # HEADER
@@ -162,5 +167,3 @@ st.markdown("""
 Built using Python, XGBoost & Streamlit
 </center>
 """, unsafe_allow_html=True)
-
-
