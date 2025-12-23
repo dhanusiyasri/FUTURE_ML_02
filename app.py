@@ -42,7 +42,7 @@ st.markdown("""
 # =========================
 # LOAD FILES
 # =========================
-model = pickle.load(open("/workspaces/FUTURE_ML_02/xgb_model.pkl", "rb"))
+model = pickle.load(open("xgb_model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
 columns = pickle.load(open("model_columns.pkl", "rb"))
 
@@ -162,4 +162,5 @@ st.markdown("""
 Built using Python, XGBoost & Streamlit
 </center>
 """, unsafe_allow_html=True)
+
 
