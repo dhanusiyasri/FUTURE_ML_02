@@ -99,6 +99,9 @@ The Streamlit app allows users to:
 ```bash
 streamlit run app.py
 ```
+ **Or
+ Use this link:**
+ https://telco-customer-churn-prediction-system-future-intern.streamlit.app/
 
 ---
 
