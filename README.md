@@ -152,7 +152,7 @@ Customer-Churn-Prediction/
 * Integration with CRM systems
 
 ---
-###📬 Acknowledgment
+## 📬 Acknowledgment
 
 This project was completed as part of Future Interns – Machine Learning Task 2, focusing on practical implementation of prediction and analysis concepts.
 
